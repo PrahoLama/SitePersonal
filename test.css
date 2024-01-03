@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Josefin+Sans&family=Snippet&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Josefin+Sans&display=swap');
 
 body{
-    background: rgb(2,0,36);
-    background: rgb(36,35,107);
-    background: rgb(19,18,78);
-    background: linear-gradient(90deg, rgba(19,18,78,1) 0%, rgba(27,8,10,1) 93%);
+  background: rgb(104,104,119);
+background: linear-gradient(90deg, rgba(104,104,119,1) 0%, rgba(228,213,215,1) 51%, rgba(215,201,205,1) 83%);
     width: fit-content;
     height: 1000px
   
@@ -32,7 +30,7 @@ section
             align-items: center;
             justify-content: center;
             transition: transform 0.3s ease-in-out;
-            margin-top: 1150px;
+            margin-top: 100px;
             margin-left: 150px;
             border: solid black;
             background: rgb(33,30,220);
@@ -164,7 +162,7 @@ margin-left: -100px;
   font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     border-radius: 25%;
-    color: #fff;
+    color: black;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -182,8 +180,12 @@ margin-left: -100px;
  
 #Aranjare
 {
-    text-align: center;
-    margin-left: 100px;
+    
+  color: black;
+  text-align: left;
+  font-size: 30px;
+  font-family:  'Snippet' , sans-serif ;
+  padding-right: 5px;
 }
 footer {
   text-align: left;
@@ -202,8 +204,8 @@ footer {
   }
   .par2
   {
-    color: azure;
-    font-family:  'Courier New', Courier, monospace ;
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   }
   .buton{
@@ -250,6 +252,15 @@ height: 30px;
     width: 30px;
 height: 30px;
   }
+  #imagine71
+  {
+    width: 30px;
+height: 30px;}
+#imagine81
+  {
+    width: 30px;
+height: 30px;}
+
   #paragr
   {
     font-family:  'Snippet' , sans-serif ;
@@ -259,8 +270,8 @@ height: 30px;
   {
     background-color: black;
     text-decoration: none;
-    margin-left: -10px;
-    margin-bottom: 10px;
+    
+    
  
   }
   .navigation1
@@ -270,6 +281,7 @@ height: 30px;
    background-color: black;
 margin-left: 375px;
 border: #fff;
+color : white
   }
   .navigation2
   {
@@ -277,6 +289,7 @@ border: #fff;
 font-size: x-large;
 margin-left: 25px;
 border: #fff;
+color: white;
   }
   .navigation3
   {
@@ -284,6 +297,7 @@ border: #fff;
     font-size: x-large;
 margin-left: 25px;
 border: #fff;
+color : white
 
   }
   a{
@@ -300,6 +314,7 @@ border: #fff;
     font-size: x-large;
 margin-left: 25px;
 border: #fff;
+color : white;
   }
   #imagine7
   {
@@ -307,3 +322,32 @@ border: #fff;
     height: 600px;
     border: solid black;
   }
+  .text-typing p {
+    margin:0px;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:typing 4s steps(22,end) forwards,
+     blink 1s infinite;
+  }
+  #buttonCV
+  {
+    margin-left: 410px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: aqua;
+
+  }
+
+html { scroll-behavior: smooth;}
+.container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#downloadButton 
+{
+  margin-left: 5px;
+  color: purple;
+  font-size: 20px
+}
