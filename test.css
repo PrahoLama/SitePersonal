@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Josefin+Sans&display=swap');
 
 body{
-  
+  background: rgb(104,104,119);
 background: white;
     width: 99%;
     height: auto;
@@ -15,7 +15,8 @@ body:after {
   bottom: 0;
   height: 6%;
   width: 100%;
-    background: linear-gradient(transparent, #aaa);
+  background: linear-gradient(transparent, #aaa);
+  z-index: 9999;
 }
 section
 {
@@ -24,29 +25,34 @@ section
      
 }
 
-   
+.card-container 
+{
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+}
 
  #card
 {
-            width: 200px;
-            height: 200px;
-            background-color: pink;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.3s ease-in-out;
-            margin-top: 100px;
-            margin-left: 150px;
-            border: solid black;
-            background: rgb(33,30,220);
-            background-color: #717171;
-        }
+ width: 200px;
+height: 200px;
+ background-color: pink;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transition: transform 0.3s ease-in-out;
+border: solid black;
+background: rgb(33,30,220);
+background-color: #717171;
+text-align: center;
+}
         
-        #card:hover {
-            transform: scale(1.2);
-        }
+#card:hover 
+{
+transform: scale(1.2);
+}
         
        
 
@@ -61,10 +67,6 @@ section
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
-    margin-top: 100px;
-    margin-left: 400px;
-    margin-top: -200px;
-    margin-bottom: 500px;
     border: solid black;
     background-color: #717171;
 }
@@ -83,10 +85,6 @@ section
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
-    margin-left: 650px;
-    margin-top: -700px;
-    margin-bottom: 500px;
-    margin-right: 200px;
     border: solid black;
     background-color: #717171;
 }
@@ -105,10 +103,6 @@ section
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
-    margin-left: 900px;
-    margin-top: -700px;
-    margin-bottom: 100px;
-    margin-right: 100px;
     border: solid black;
     background-color: #717171;
 }
@@ -130,10 +124,6 @@ section
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
-    margin-left: 1150px;
-    margin-top: -300px;
-    margin-bottom: 100px;
-    margin-right: -150px;
     border: solid black;
     background-color: #717171;
 }
@@ -145,8 +135,6 @@ section
 h4
 {
     font-size: x-large;
-    margin-top: -1150px;
-    margin-left: 50px;
     text-align: center;
     color:white ;
     font-family:  'Snippet' , sans-serif ;
@@ -324,6 +312,7 @@ html
   display: flex;
   align-items: center;
   padding: 20px;
+
 }
 
 #downloadButton 
@@ -447,11 +436,90 @@ img {vertical-align: middle;}
   animation: fadeIn 1s ease-in forwards; 
 }
 
-@keyframes fadeIn {
+@keyframes fadeIn 
+{
   from {
       opacity: 0;
   }
   to {
       opacity: 1;
   }
+}
+#textContainer
+{
+  border-radius: 80%;
+}
+::-webkit-scrollbar 
+{
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-track 
+{
+  box-shadow: inset 0 0 5px black; 
+
+}
+ 
+
+::-webkit-scrollbar-thumb 
+{
+  background: grey;
+
+}
+
+::-webkit-scrollbar-thumb:hover 
+{
+  background: black; 
+}
+.insein {
+  transform:
+    perspective(800px)
+    rotateY(25deg) scale(0.9)
+    rotateX(10deg);
+  transition: 0.6s ease all;
+
+  &:hover {
+    transform:
+      perspective(800px)
+      rotateY(-15deg)
+      translateY(-50px)
+      rotateX(10deg)
+      scale(1);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.insein2 {
+  transform:
+    scale(0.75)
+    rotateY(-30deg)
+    rotateX(45deg)
+    translateZ(4.5rem);
+  transform-origin: 50% 100%;
+  transform-style: preserve-3d;
+  box-shadow: 1rem 1rem 2rem rgba(0,0,0,0.25);
+  transition: 0.6s ease transform;
+
+  &:hover {
+    transform: scale(1);
+  }
+
+  &::before {
+    transform: translateZ(4rem);
+    &:hover {
+      transform: translateZ(0);
+    }
+  }
+
+  &::after {
+    transform: translateZ(-4rem);
+    &:hover {
+      transform: translateZ(-1px);
+    }
+  }
+}
+.shadow
+{
+  box-shadow: 10px 10px;
 }
